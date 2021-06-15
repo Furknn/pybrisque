@@ -6,7 +6,7 @@ import cv2
 import numpy as np
 from scipy.special import gamma
 import libsvm.svmutil as svmutil
-from libsvm.svmutil import gen_svm_nodearray
+from libsvm.svm import gen_svm_nodearray
 
 from brisque.utilities import root_path
 
