@@ -184,5 +184,4 @@ class BRISQUE(object):
         nr_classifier = 1
         prob_estimates = (c_double * nr_classifier)()
 
-        return svmutil.libsvm.svm_predict_probability(
-            self._model, x, prob_estimates)
+        return svmutil.svm_predict(self._model, x, prob_estimates)
